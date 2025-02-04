@@ -10,7 +10,7 @@ export const getAPI=createAsyncThunk('getAPI',async (request)=>{
 })
 
 const initialState={
-    status:'Loading',
+    status:'Idle',
     data:{}
 
 }

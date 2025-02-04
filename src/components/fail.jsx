@@ -2,6 +2,10 @@
 
 export default function Fail() {
   return (
-    <div>Fail</div>
+    <section className="text-2xl font-bold uppercase flex items-center justify-center  ">
+        <div>
+            fail
+        </div>
+    </section>
   )
 }

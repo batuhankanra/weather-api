@@ -5,18 +5,18 @@
     width: 8px;
   }
   
-  /* Kaydırma çubuğu arka planı */
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
   
-  /* Kaydırma çubuğu rengi */
   ::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 4px;
+    border-radius: 10px;
   }
   
   /* Kaydırma çubuğu üzerine gelince rengi koyulaştır */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #333;
+    transition: all;
+    animation-duration: 5ms;
   }
