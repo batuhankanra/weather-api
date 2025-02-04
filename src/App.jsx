@@ -48,16 +48,16 @@ export default function App() {
       </section>
       {status==='Success' && (
         <section className="w-full md:w-[800px] mx-auto   mt-14">
-          <div className="flex items-center justify-between py-3 px-7 text-lg bg-white rounded-xl font-medium text-zinc-600 ">
-            <span className="flex items-center justify-center">{data.location.name}{data.location.name===data.location.region ? '' : ` / ${data.location.region}`}</span>
-            <span>Enlem:{data.location.lat}</span>
+          <div className="flex flex-col md:flex-row items-center justify-between py-3 px-7 text-lg bg-white m-4 md:m-0 gap-y-4 rounded-xl font-medium text-zinc-600 ">
+            <div className="">{data.location.name}{data.location.name===data.location.region ? '' : ` / ${data.location.region}`}</div>
+            <div>Enlem:{data.location.lat}</div>
             <span>Boylam:{data.location.lon}</span>
             <span>Gun Dogumu:{timer(data.forecast.forecastday[0].astro.sunrise)}</span>
             <span>Gun Batimi:{timer(data.forecast.forecastday[0].astro.sunset)}</span>
           </div>
-            <div className="mt-10 flex items-center justify-between py-3 px-7 text-lg bg-white rounded-xl font-medium text-zinc-600">
-              <p className="flex items-center text-4xl gap-x-2"> {data.current.heatindex_c} 
-                <span className="text-sm flex flex-col items-center"> <img src={`http:${data.current.condition.icon}`} alt="" /> {data.current.condition.text} </span>
+            <div className="mt-10 flex flex-col md:flex-row gap-y-4 mx-4 md:mx-0 items-center justify-between py-3 px-7 text-lg bg-white rounded-xl font-medium text-zinc-600">
+              <p className="flex flex-col md:flex-row gap-y-4 m-4 md:m-0 items-center text-4xl gap-x-2"> {data.current.heatindex_c} 
+                <span className="text-sm flex flex-row md:flex-col items-center"> <img src={`http:${data.current.condition.icon}`} alt="" /> {data.current.condition.text} </span>
               </p>
               <div className="flex flex-col items-center">
                 <p>Yagis</p>
